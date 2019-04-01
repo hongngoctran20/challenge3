@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>SpaceX System</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nova+Mono" rel="stylesheet">
+</head>
+
+<body>
+	<div id='stars'></div>
+	<div id='stars2'></div>
+	<div id='stars3'></div>
+
+	<header>
+		<h1>SPACEX SYSTEM</h1>
+		<p>You are returning to our home planet: The Earth.</p>
+	</header>
+
+    <div class="stage filter-contrast">
+        <div class="dot-shuttle"></div>
+    </div>
+
+    <div class="nametag">
+    	<h2><strong>EarthMap</strong></h2>
+    </div>
+
+	<div id="map" class="box" style="border-radius: 25px; padding: 8px; border: 4px solid #FFFFFF; word-wrap: break-word;"></div>
+
+    <div class="nametag">
+    	<h2 id="weathertag"><strong>Weather Condition:</strong></h2>
+		<div class="button">
+			  <div class="weather-info">
+			    <span class="infor">Current Location: </span><div id="location" class="info"></div>
+			    <span class="infor">Temperature: </span><div id="temperature" class="info">
+			      <span id="temperature-num"></span>
+			      <span>°</span>
+			      <span id="temperature-scale">C</span>
+			    </div>
+			    <span class="infor">Status: </span><div id="weather-condition" class="info"></div>
+			    <div id="weather-icon" class="info-icon"></div>
+			  </div>
+		</div>
+    </div>
+
+    <div class="nametag">
+    	<h2 id="weathertag"><strong>AirVisual Data:</strong></h2>
+    	<div>
+	    	<div name="airvisual_widget" key="KFwd4eKm9jN4iAPwY" class="box1"></div>
+	    	<div name="airvisual_widget" key="LEmvQzqjRQxKm7RGd" class="box1"></div>
+	    	<div name="airvisual_widget" key="M6NQs4Cgay65h38wM " class="box1"></div>
+	    	<div name="airvisual_widget" key="eYoipeEpup3dQcCRc" class="box1"></div>
+	    	<div name="airvisual_widget" key="9LepNNKkEfvPSWki3" class="box1"></div>
+	    	<div name="airvisual_widget" key="bK8G33az2LSxmGu6y" class="box1"></div>
+	    	<div name="airvisual_widget" key="CYhZDugFx5RcLCA8A" class="box1"></div>
+	    	<div name="airvisual_widget" key="35EmerSgybS3BBvCC" class="box1"></div>
+	    	<div name="airvisual_widget" key="okBFkPh3xXzZLsgs9 " class="box1"></div>
+	    	<div name="airvisual_widget" key="qQME4B6w8gLgNcoLG " class="box1"></div>
+			<div name="airvisual_widget" key="fo4jQuQACDBRajJ6d" class="box1"></div>
+			<div name="airvisual_widget" key="MPQkTcMuXTwX4MY8K" class="box1"></div>
+		</div>
+    </div>
+
+	<footer>
+		<p style="padding-top: 10px; margin-bottom: 0">Interplanetary Transport System (ITS)</p>
+		<div class="stage filter-contrast" style="padding-top: 20px">
+	        <div class="dot-shuttle"></div>
+	    </div>
+		<p id="day" style="padding-bottom: 20px; width: 80%; margin-top: 0" class="info-icon"></p>
+	</footer>
+
+	<script src="js/main.js"></script>
+	<script type="text/javascript" src="https://www.airvisual.com/scripts/widget_v2.0.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnWkJjiqXDiPQS-o5qkFKCMRURj7Ivp7E&callback=initMap" async defer>
+	</script>
+
+</body>
+</html>
